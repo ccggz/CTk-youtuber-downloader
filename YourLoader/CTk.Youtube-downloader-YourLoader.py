@@ -53,7 +53,7 @@ def download_button_click():
     download_path = r'C:\Users\PC\Downloads' 
     video_downloader(video_url, download_path)
 
-    # Obtém o título do vídeo e atualiza a label
+    
     video_title = get_video_title(video_url)
     title_label.configure(text=f"Título do vídeo:{video_title}")
 video_url = entry_link.get()
@@ -78,7 +78,7 @@ loader_label.place(x= 32, y = 10)
 
 
 #Help Button/redirect read.me
-tab = ""
+tab = "https://github.com/ccggz/CTk-youtuber-downloader/blob/main/README.md"
 def help_button():
     webbrowser.open_new_tab(tab)
 
